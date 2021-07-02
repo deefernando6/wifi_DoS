@@ -12,3 +12,4 @@ def check_for_essid(essid, lst): #test if ESSID is already in the list
 	check_status = True
 	
 	if len(lst) == 0:
+		return check_status
