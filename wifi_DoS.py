@@ -24,3 +24,4 @@ if not "SUDO_UID" in os.environ.keys(): #check whether user run with sudo previl
 	exit()
 
 for file_name in os.listdir(): #to remove csv files before exxecuting the script
+	if ".csv" in file_name:
