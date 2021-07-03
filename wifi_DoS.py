@@ -16,3 +16,4 @@ def check_for_essid(essid, lst): #test if ESSID is already in the list
 		
 	for item in lst : #this will run if there are access points in the list
 		if essid in item["ESSID"]:
+		 check_status = False     
