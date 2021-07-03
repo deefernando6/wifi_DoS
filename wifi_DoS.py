@@ -20,3 +20,4 @@ def check_for_essid(essid, lst): #test if ESSID is already in the list
 	return check_status
 	
 if not "SUDO_UID" in os.environ.keys(): #check whether user run with sudo previledges.
+	print('You need root previledges. Try with sudo')
