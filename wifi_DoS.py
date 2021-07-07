@@ -29,3 +29,5 @@ for file_name in os.listdir(): #to remove csv files before exxecuting the script
         directory = os.getcwd()
 		try: 
             os.mkdir(directory + "/backup/") #creating backup folder
+		except:
+            print('Backup folder is already in the directory')
