@@ -27,3 +27,5 @@ for file_name in os.listdir(): #to remove csv files before exxecuting the script
 	if ".csv" in file_name:
 		print("Yo have to remove .csv files in your directory")
         directory = os.getcwd()
+		try: 
+            os.mkdir(directory + "/backup/") #creating backup folder
