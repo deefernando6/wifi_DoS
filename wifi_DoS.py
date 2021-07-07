@@ -31,3 +31,6 @@ for file_name in os.listdir(): #to remove csv files before exxecuting the script
             os.mkdir(directory + "/backup/") #creating backup folder
 		except:
             print('Backup folder is already in the directory')
+		
+		timestamp = datetime.now()
+        shutil.move(file_name, directory + "/backup/" + str(timestamp) + "-" + file_name)
