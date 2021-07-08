@@ -36,3 +36,4 @@ for file_name in os.listdir(): #to remove csv files before exxecuting the script
         shutil.move(file_name, directory + "/backup/" + str(timestamp) + "-" + file_name)
 		
 wlan_pattern = re.compile("^wlan[0-9]+")
+check_wifi_result = wlan_pattern.findall(subprocess.run(["iwconfig"], capture_output=True).stdout.decode())
