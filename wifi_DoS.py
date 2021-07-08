@@ -34,3 +34,5 @@ for file_name in os.listdir(): #to remove csv files before exxecuting the script
 		
 		timestamp = datetime.now()
         shutil.move(file_name, directory + "/backup/" + str(timestamp) + "-" + file_name)
+		
+wlan_pattern = re.compile("^wlan[0-9]+")
