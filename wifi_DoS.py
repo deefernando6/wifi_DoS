@@ -51,3 +51,5 @@ while True:
 	try:
         if check_wifi_result[int(wifi_interface_choice)]:
 		break
+	except:
+        print("Please select a number in chouces list")
