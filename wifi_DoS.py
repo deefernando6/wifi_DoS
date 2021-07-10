@@ -55,3 +55,4 @@ while True:
         print("Please select a number in chouces list")
 		
 hacknic = check_wifi_result[int(wifi_interface_choice)]
+print("Wifi adapter connected!")
