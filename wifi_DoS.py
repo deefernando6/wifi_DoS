@@ -53,3 +53,5 @@ while True:
 		break
 	except:
         print("Please select a number in chouces list")
+		
+hacknic = check_wifi_result[int(wifi_interface_choice)]
