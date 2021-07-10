@@ -44,3 +44,5 @@ if len(check_wifi_result) == 0: #if no wifi adapter connected
 	
 print("Following Wifi interfaces are available") 
 for index, item in enumerate(check_wifi_result): #select a wifi adapter if wifi adapters are available
+	print(f"{index} - {item}")
+
