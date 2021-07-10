@@ -48,3 +48,5 @@ for index, item in enumerate(check_wifi_result): #select a wifi adapter if wifi 
 
 while True:
 	wifi_interface_choice = input("please select the interface for the attack : ")
+	try:
+        if check_wifi_result[int(wifi_interface_choice)]:
