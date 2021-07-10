@@ -41,3 +41,5 @@ check_wifi_result = wlan_pattern.findall(subprocess.run(["iwconfig"], capture_ou
 if len(check_wifi_result) == 0: #if no wifi adapter connected
 	print("Please connect a wifi adapter")
     exit()
+	
+print("Following Wifi interfaces are available") 
