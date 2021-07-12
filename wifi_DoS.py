@@ -66,3 +66,4 @@ discover_access_points = subprocess.Popen(["sudo", "airodump-ng", "-w", "file", 
 
 try: 
     while True:
+		subprocess.call("clear", shell=True) #cleaning the screen before print the network interfaces
