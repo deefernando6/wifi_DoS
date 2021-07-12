@@ -76,3 +76,5 @@ try:
 					csv_reader = csv.DictReader(csv_h, fieldnames=fieldnames) #to create a list of dictionary with the key as specified in the filename
                     for row in csv_reader:
                         if row["BSSID"]=="BSSID":
+							 pass
+                        elif row["BSSID"] == "Station MAC":
