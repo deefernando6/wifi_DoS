@@ -78,3 +78,5 @@ try:
                         if row["BSSID"]=="BSSID":
 							 pass
                         elif row["BSSID"] == "Station MAC":
+							break
+                        elif check_for_essid(row["ESSID"], acitve_wireless_networks):
