@@ -80,3 +80,4 @@ try:
                         elif row["BSSID"] == "Station MAC":
 							break
                         elif check_for_essid(row["ESSID"], acitve_wireless_networks):
+							acitve_wireless_networks.append(row)
