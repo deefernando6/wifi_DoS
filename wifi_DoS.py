@@ -67,3 +67,6 @@ discover_access_points = subprocess.Popen(["sudo", "airodump-ng", "-w", "file", 
 try: 
     while True:
 		subprocess.call("clear", shell=True) #cleaning the screen before print the network interfaces
+		
+		for file_name in os.listdir():
+            fieldnames = ['BSSID', 'First_time_seen', 'Last_time_seen', 'channel', 'Speed', 'Privacy', 'Cipher', 'Authentication', 'Power', 'beacons', 'IV', 'LAN_IP', 'ID_length', 'ESSID', 'Key']
