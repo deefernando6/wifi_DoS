@@ -73,3 +73,6 @@ try:
 			if ".csv" in file_name:
 			 with open(file_name) as csv_h:
                     csv_h.seek(0)
+					csv_reader = csv.DictReader(csv_h, fieldnames=fieldnames) #to create a list of dictionary with the key as specified in the filename
+                    for row in csv_reader:
+                        if row["BSSID"]=="BSSID":
