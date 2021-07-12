@@ -58,3 +58,4 @@ hacknic = check_wifi_result[int(wifi_interface_choice)]
 print("Wifi adapter connected!")
 
 kill_conflict_process = subprocess.run(["sudo", "airmon-ng", "check", "kill"]) #killing all conflicting processes using airmong-ng
+print("Putting wiifi adapter to monitor mode......")
