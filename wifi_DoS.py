@@ -63,3 +63,6 @@ put_in_monitor_mode = subprocess.run(["sudo", "airmon-ng", "start", hacknic]) #p
 
 #discovering access points
 discover_access_points = subprocess.Popen(["sudo", "airodump-ng", "-w", "file", "--write-interval", "1", "--output-format", "csv", hacknic + "mon"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+try: 
+    while True:
