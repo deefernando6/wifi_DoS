@@ -84,3 +84,4 @@ try:
 		print("Scanning. Press Ctrl +c when you want to select the wireless network to attack:\n")
 		print("No |\tBSSID              |\tChannel|\tESSID                         |")
 		print("___|\t___________________|\t_______|\t______________________________|")
+		for index, item in enumerate(acitve_wireless_networks):
