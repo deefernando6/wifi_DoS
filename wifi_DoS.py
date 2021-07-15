@@ -82,3 +82,4 @@ try:
                         elif check_for_essid(row["ESSID"], acitve_wireless_networks):
 							acitve_wireless_networks.append(row)
 		print("Scanning. Press Ctrl +c when you want to select the wireless network to attack:\n")
+		print("No |\tBSSID              |\tChannel|\tESSID                         |")
