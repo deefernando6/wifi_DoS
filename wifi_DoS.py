@@ -88,3 +88,5 @@ try:
 			print(f"{index}\t {item['BSSID']}\t {item['channel'].strip()}\t\t{item['ESSID']}")
 
 		time.sleep(1)
+		
+except KeyboardInterrupt:
