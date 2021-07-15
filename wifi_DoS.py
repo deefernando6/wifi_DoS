@@ -85,3 +85,4 @@ try:
 		print("No |\tBSSID              |\tChannel|\tESSID                         |")
 		print("___|\t___________________|\t_______|\t______________________________|")
 		for index, item in enumerate(acitve_wireless_networks):
+			print(f"{index}\t {item['BSSID']}\t {item['channel'].strip()}\t\t{item['ESSID']}")
