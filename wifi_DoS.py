@@ -95,3 +95,4 @@ except KeyboardInterrupt:
 #Ensure the input choice is valid
 while True:
 	choice= input("Please select a choice from above: ")
+	try:
