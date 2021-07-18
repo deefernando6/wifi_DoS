@@ -92,5 +92,5 @@ try:
 except KeyboardInterrupt:
 	print("Ready to make choice..")
 	
-	
 #Ensure the input choice is valid
+while True:
