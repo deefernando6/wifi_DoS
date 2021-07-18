@@ -98,3 +98,4 @@ while True:
 	try:
 		if acitve_wireless_networks[int(choice)]:
 			break
+	except:
