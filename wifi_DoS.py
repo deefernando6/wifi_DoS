@@ -97,3 +97,4 @@ while True:
 	choice= input("Please select a choice from above: ")
 	try:
 		if acitve_wireless_networks[int(choice)]:
+			break
