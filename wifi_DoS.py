@@ -100,3 +100,6 @@ while True:
 			break
 	except:
 		print("Please try again..")
+		
+hackbssid = acitve_wireless_networks[int(choice)]["BSSID"]
+hackchannel = acitve_wireless_networks[int(choice)].strip()
