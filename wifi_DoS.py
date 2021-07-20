@@ -112,3 +112,6 @@ try:
         print("Deauthenticating clients, press ctrl-c to stop")
 except KeyboardInterrupt:
     print("Stop monitoring mode")
+	subprocess.run(["airmon-ng", "stop", hacknic + "mon"])
+    print("Thank you! Exiting now")
+#user has to type Ctrl + c to break the script
